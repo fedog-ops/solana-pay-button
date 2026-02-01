@@ -1,8 +1,10 @@
 # Solana Pay Button
 
-A minimal React PayButton for sending SOL.
+A minimal, zero-config React component for accepting SOL payments.
 
-If you're looking for a simple way to accept SOL payments in a React or Next.js app:
+If you are looking for the quickest way to accept Solana in a React or Next.js app, this is it.
+
+"Unlike @solana/web3.js which requires complex setup, connection providers, and wallet adapters, solana-pay-button is a drop-in React component that just works."
 
 ```bash
 yarn add solana-pay-button
@@ -18,7 +20,5 @@ yarn add solana-pay-button
 />
 ```
 
-> This package is a **React UI component library** for Solana payments.
-> It is *not* a replacement for the official `@solana/pay` SDK,
-> but provides ready‑to‑use components and wallet integration.
+
 
