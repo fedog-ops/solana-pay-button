@@ -17,3 +17,8 @@ yarn add solana-pay-button
   onError={(err) => console.error("Payment failed:", err)}
 />
 ```
+
+> This package is a **React UI component library** for Solana payments.
+> It is *not* a replacement for the official `@solana/pay` SDK,
+> but provides ready‑to‑use components and wallet integration.
+
