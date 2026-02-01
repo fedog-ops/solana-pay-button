@@ -1,6 +1,6 @@
 {
   "name": "solana-pay-button",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
@@ -27,5 +27,18 @@
   "repository": {
   "type": "git",
   "url": "https://github.com/fedog-ops/solana-pay-button"
-}
+  },
+  "keywords": [
+  "solana",
+  "pay",
+  "payment",
+  "button",
+  "react",
+  "component",
+  "ui",
+  "phantom",
+  "wallet",
+  "donation",
+  "tipping"
+]
 }
