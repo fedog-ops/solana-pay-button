@@ -24,18 +24,20 @@ export type PayButtonProps = {
   recipient: string;
   amountSol: number;
   endpoint?: string;
+  onError?: (error: string) => void;
 };
 
 export const PayButton: React.FC<PayButtonProps> = ({
   recipient,
   amountSol,
   endpoint = "https://api.devnet.solana.com",
+  onError,
 }) => {
   const { publicKey, sendTransaction } = useWallet();
 
   const onPay = async () => {
     if (!publicKey) {
-      alert("Connect wallet first");
+      if (onError) onError("Connect wallet first");
       return;
     }
 
