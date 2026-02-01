@@ -36,12 +36,13 @@ var createTransferTx = (from, to, lamports) => new import_web3.Transaction().add
 var PayButton = ({
   recipient,
   amountSol,
-  endpoint = "https://api.devnet.solana.com"
+  endpoint = "https://api.devnet.solana.com",
+  onError
 }) => {
   const { publicKey, sendTransaction } = (0, import_wallet_adapter_react.useWallet)();
   const onPay = async () => {
     if (!publicKey) {
-      alert("Connect wallet first");
+      if (onError) onError("Connect wallet first");
       return;
     }
     const connection = new import_web3.Connection(endpoint);
