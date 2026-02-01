@@ -14,4 +14,6 @@ yarn add solana-pay-button
 <PayButton
   recipient="9xQeWvG816bUx9EPfZyR9..."
   amountSol={0.1}
+  onError={(err) => console.error("Payment failed:", err)}
 />
+```
